@@ -1,0 +1,432 @@
+*:not(i){
+    font-family: 'Poppins', sans-serif!important;
+}
+
+body{
+    background: #eee;
+}
+
+figure{
+    margin: 0!important;
+}
+
+h1{
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+h2,h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.profileImg
+{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    box-shadow: 2px 4px 5px rgb(146, 146, 146);
+}
+
+.profileImg img
+{
+    width: 100%;
+    display: block;
+}
+
+.w-45{
+    width: 45%;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-item{
+    cursor: pointer;
+}
+
+.bg-orange{
+    background: #230bad;
+    color: white;
+}
+
+.btn-orange{
+    background: #230bad;
+    color: white;
+}
+
+.btn-orange:hover{
+    background: #2d0fda;
+    color: white;
+}
+
+.btn-orange:active{
+    background: #3612ff;
+
+}
+
+span i{
+    cursor: pointer;
+}
+
+.w-35{
+    width: 35%;
+}
+
+.text-orange{
+    color: #230bad;
+}
+
+.bg-orangered{
+    background: #230bad;
+}
+
+.text-orangered{
+    color: #230bad;
+}
+
+
+/* NAVBAR */
+
+nav{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 1rem 10px 5rem;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+nav .logo{
+    float: left;
+}
+
+nav .logo img{
+    height: 80px;
+    transition: .5s;
+}
+
+.text-red{
+    color: rgb(194, 0, 0);
+}
+
+.btn-red{
+    background: rgb(194, 0, 0);
+    color: white
+}
+
+.btn-red:hover{
+    background: rgb(163, 0, 0);
+    color: white
+}
+
+.bg-red{
+    background: rgb(194, 0, 0);
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    margin-left: 10%;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li{
+    list-style: none;
+
+}
+
+nav ul li a{
+    line-height: 80px;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: line-height .5s;
+    transition: background .3s;
+    border-radius: 5px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.671);
+}
+
+.noselect { /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+nav ul li a:hover{
+    color: white;
+    background: rgb(170, 0, 0);
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    color: white;
+    background: rgb(194, 0, 0);
+    text-decoration: none;
+}
+
+nav.sticky{
+/*     background: #230bade7; */
+background: linear-gradient(90deg, rgba(35,11,173,1) 0%, rgba(35,11,173,0.96) 55%, rgba(0,61,150,1) 100%);
+    height: 80px;
+    padding: 10px 2rem 10px 7rem;
+    backdrop-filter: blur(1px);
+}
+
+nav.sticky .logo img{
+    height: 60px;
+}
+
+nav.sticky ul li a{
+    line-height: 60px;
+    color: white;
+}
+
+.account{
+    height: 40px;
+    display: flex;
+}
+
+.account * {
+    margin: 0 5px;
+}
+
+.login{
+    background: linear-gradient(90deg, rgba(120,64,144,1) 0%, rgba(194,0,79,1) 55%, rgba(150,0,58,1) 100%);
+    color: white;
+    background-clip: padding-box;
+    transition: all .5s ease;
+    position: relative;
+    border: 4px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.login:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: rgba(194,0,79,1);
+}
+
+.login:after, .sign-up:after{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    bottom: -3px;
+    right: -3px;
+    background: linear-gradient(90deg, rgba(120,64,144,1) 0%, rgba(194,0,79,1) 55%, rgba(150,0,58,1) 100%);
+    border-radius: 4px;
+    content: "";
+    z-index: -1;
+}
+
+.sign-up{
+    background: white;
+    background-clip: padding-box;
+    transition: all .5s ease;
+    position: relative;
+    color: rgba(194,0,79,1);
+    font-weight: 600;
+}
+
+.sign-up:hover{
+    background: linear-gradient(90deg, rgba(120,64,144,1) 0%, rgba(194,0,79,1) 55%, rgba(150,0,58,1) 100%);
+    background-clip: padding-box;
+    color: white;
+}
+
+/* BANNER */
+
+.banner{
+    height: 400px;
+    width: 100%;
+    background: url("../img/bg.jpg") no-repeat center/cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.384);
+}
+
+.banner-container h1{
+    font-size: 4em;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.banner-container h1 span{
+    border: 10px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+/* MAIN */
+
+main{
+    padding: 4rem 10%;
+}
+
+#searchBar{
+    max-width: 300px;
+    min-width: 150px;
+}
+
+/* LOGIN FORM */
+
+.form-container{
+    background: linear-gradient(110deg, rgba(213,40,139,1) 0%, rgba(153,35,115,1) 19%, rgba(171,19,99,1) 67%, rgba(194,0,79,1) 83%, rgba(150,0,58,1) 97%);
+    height: 95%;
+    width: 100%;
+    position: relative;
+}
+
+.form-container form{
+    position: absolute;
+    top:0; left:0; right: 0; bottom: 0;
+    width: 400px;
+    height: 600px;
+    background: #ffffff21;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 20px #c7c7c7;
+    padding: 0 50px;
+    border: 3px solid rgba(255, 255, 255, 0.63);
+}
+
+.form-container form *{
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.form-container label{
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.5s; 
+    width: 100%;
+}
+
+.form-container form input{
+    display: block;
+    width: 300px;
+    position: absolute;
+    background: #ffffff;
+    color: rgba(194,0,79,1);
+    padding: 0 15px;
+    border-radius: 5px;
+    height: 2px;
+    transition: all 0.5s
+}
+
+.form-container ::placeholder{
+    color: transparent;
+}
+#username{
+    bottom: -90px;
+}
+
+label[for="username"]{
+    bottom: -95px;
+}
+
+#email{
+    bottom: -190px;
+}
+
+label[for="email"]{
+    bottom: -195px;
+}
+
+#password1, #password{
+    bottom: -290px;
+}
+
+label[for="password1"], label[for="password"]{
+    bottom: -295px;
+}
+
+#password2{
+    bottom: -390px;
+}
+
+label[for="password2"]{
+    bottom: -395px;
+}
+
+.form-container button{
+    width: 300px;
+    position: absolute;
+    bottom: 30px;
+    text-transform: uppercase;
+    background: whitesmoke;
+    border: 2px ridge white;
+    color: rgba(194,0,79,1);
+    padding: 15px 0;
+}
+
+.form-container button:hover{
+    background: rgb(225, 225, 225);
+    color: rgb(199, 0, 80);
+}
+
+.form-container button:active{
+    background: rgb(192, 192, 192);
+    color: rgb(199, 0, 80);
+}
+
+.my-style::placeholder{
+    color: rgb(199, 84, 180);
+    font-style: italic;
+}
+
+/*  */
+
+
+/* FOOTER */
+
+footer{
+    background: #230bad;
+    color: white
+}
+
+.message-box{
+    background: white;
+    box-shadow:  5px 5px 10px #8a8a8a, -5px -5px 10px #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
